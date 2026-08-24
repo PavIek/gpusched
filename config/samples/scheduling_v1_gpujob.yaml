@@ -1,0 +1,14 @@
+apiVersion: scheduling.gpusched.io/v1
+kind: GPUJob
+metadata:
+  labels:
+    app.kubernetes.io/name: gpusched
+    app.kubernetes.io/managed-by: kustomize
+  name: gpujob-sample
+spec:
+  # TODO(user): Add fields here
+  replicas: 2
+  gpusPerPod: 1
+  image: "nvidia/cuda:11.0-base"
+  command:
+    - "nvidia-smi"

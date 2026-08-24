@@ -1,0 +1,96 @@
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    controller-gen.kubebuilder.io/version: v0.20.1
+  name: gpujobs.scheduling.gpusched.io
+spec:
+  group: scheduling.gpusched.io
+  names:
+    kind: GPUJob
+    listKind: GPUJobList
+    plural: gpujobs
+    singular: gpujob
+  scope: Namespaced
+  versions:
+  - additionalPrinterColumns:
+    - jsonPath: .spec.replicas
+      name: Replicas
+      type: integer
+    - jsonPath: .spec.gpusPerPod
+      name: GPUs/Pod
+      type: integer
+    - jsonPath: .status.phase
+      name: Phase
+      type: string
+    - jsonPath: .metadata.creationTimestamp
+      name: Age
+      type: date
+    name: v1
+    schema:
+      openAPIV3Schema:
+        description: GPUJob is the Schema for the gpujobs API
+        properties:
+          apiVersion:
+            description: |-
+              APIVersion defines the versioned schema of this representation of an object.
+              Servers should convert recognized schemas to the latest internal value, and
+              may reject unrecognized values.
+              More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
+            type: string
+          kind:
+            description: |-
+              Kind is a string value representing the REST resource this object represents.
+              Servers may infer this from the endpoint the client submits requests to.
+              Cannot be updated.
+              In CamelCase.
+              More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+            type: string
+          metadata:
+            type: object
+          spec:
+            description: spec defines the desired state of GPUJob
+            properties:
+              command:
+                items:
+                  type: string
+                type: array
+              gpusPerPod:
+                format: int32
+                type: integer
+              image:
+                type: string
+              replicas:
+                format: int32
+                type: integer
+            required:
+            - gpusPerPod
+            - image
+            - replicas
+            type: object
+          status:
+            description: status defines the observed state of GPUJob
+            properties:
+              failed:
+                format: int32
+                type: integer
+              phase:
+                type: string
+              running:
+                format: int32
+                type: integer
+              scheduled:
+                format: int32
+                type: integer
+              succeeded:
+                format: int32
+                type: integer
+            type: object
+        required:
+        - spec
+        type: object
+    served: true
+    storage: true
+    subresources:
+      status: {}
