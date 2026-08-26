@@ -99,7 +99,8 @@ kubectl get nodes
 
 bash
 # 部署 NVIDIA Device Plugin（DaemonSet）
-kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/v0.17.1/deployments/static/nvidia-device-plugin.yml
+<!-- kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/v0.17.1/deployments/static/nvidia-device-plugin.yml -->
+kubectl apply -f nvidia-device-plugin.yml
 
 # 验证 Pod 运行状态
 kubectl get pods -n kube-system | grep nvidia-device-plugin
