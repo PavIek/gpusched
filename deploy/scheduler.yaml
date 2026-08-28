@@ -1,0 +1,66 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gpusched-scheduler
+  namespace: gpusched-system
+  labels:
+    component: scheduler
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: scheduler
+  template:
+    metadata:
+      labels:
+        component: scheduler
+    spec:
+      serviceAccountName: gpusched-scheduler
+      containers:
+      - name: scheduler
+        image: localhost:5001/gpusched-scheduler:latest
+        imagePullPolicy: IfNotPresent
+        command:
+        - /usr/local/bin/kube-scheduler
+        - --config=/etc/kubernetes/scheduler-config.yaml
+        - --v=3
+        volumeMounts:
+        - name: config
+          mountPath: /etc/kubernetes
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 200m
+            memory: 256Mi
+      volumes:
+      - name: config
+        configMap:
+          name: gpusched-scheduler-config
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gpusched-scheduler-config
+  namespace: gpusched-system
+data:
+  scheduler-config.yaml: |
+    apiVersion: kubescheduler.config.k8s.io/v1
+    kind: KubeSchedulerConfiguration
+    profiles:
+    - schedulerName: gpusched-scheduler
+      plugins:
+        filter:
+          enabled:
+          - name: GPUFit
+        score:
+          enabled:
+          - name: GPUFit
+            weight: 10
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: gpusched-scheduler
+  namespace: gpusched-system
