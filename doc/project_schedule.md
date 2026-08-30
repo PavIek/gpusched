@@ -89,7 +89,7 @@ nodes:
 EOF
 
 # 创建集群
-kind create cluster --config kind-config.yaml --name gpu-cluster
+kind create cluster --config kind-config.yaml --name gpu-cluster --image kindest/node:v1.37.0
 
 # 验证集群状态
 kubectl cluster-info --context kind-gpu-cluster

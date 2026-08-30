@@ -1,0 +1,319 @@
+I0830 09:10:44.624947       1 flags.go:64] FLAG: --allow-metric-labels="[]"
+I0830 09:10:44.625057       1 flags.go:64] FLAG: --allow-metric-labels-manifest=""
+I0830 09:10:44.625060       1 flags.go:64] FLAG: --authentication-kubeconfig=""
+I0830 09:10:44.625062       1 flags.go:64] FLAG: --authentication-skip-lookup="false"
+I0830 09:10:44.625070       1 flags.go:64] FLAG: --authentication-token-webhook-cache-ttl="10s"
+I0830 09:10:44.625078       1 flags.go:64] FLAG: --authentication-tolerate-lookup-failure="true"
+I0830 09:10:44.625080       1 flags.go:64] FLAG: --authorization-always-allow-paths="[/healthz,/readyz,/livez]"
+I0830 09:10:44.625083       1 flags.go:64] FLAG: --authorization-kubeconfig=""
+I0830 09:10:44.625084       1 flags.go:64] FLAG: --authorization-webhook-cache-authorized-ttl="10s"
+I0830 09:10:44.625086       1 flags.go:64] FLAG: --authorization-webhook-cache-unauthorized-ttl="10s"
+I0830 09:10:44.625087       1 flags.go:64] FLAG: --bind-address="0.0.0.0"
+I0830 09:10:44.625089       1 flags.go:64] FLAG: --cert-dir=""
+I0830 09:10:44.625091       1 flags.go:64] FLAG: --client-ca-file=""
+I0830 09:10:44.625092       1 flags.go:64] FLAG: --config="/etc/kubernetes/scheduler-config.yaml"
+I0830 09:10:44.625093       1 flags.go:64] FLAG: --contention-profiling="true"
+I0830 09:10:44.625094       1 flags.go:64] FLAG: --disable-http2-serving="false"
+I0830 09:10:44.625096       1 flags.go:64] FLAG: --disabled-metrics="[]"
+I0830 09:10:44.625098       1 flags.go:64] FLAG: --emulated-version="[]"
+I0830 09:10:44.625120       1 flags.go:64] FLAG: --feature-gates=""
+I0830 09:10:44.625134       1 flags.go:64] FLAG: --help="false"
+I0830 09:10:44.625135       1 flags.go:64] FLAG: --http2-max-streams-per-connection="0"
+I0830 09:10:44.625141       1 flags.go:64] FLAG: --kube-api-burst="100"
+I0830 09:10:44.625143       1 flags.go:64] FLAG: --kube-api-content-type="application/vnd.kubernetes.protobuf"
+I0830 09:10:44.625145       1 flags.go:64] FLAG: --kube-api-qps="50"
+I0830 09:10:44.625153       1 flags.go:64] FLAG: --kubeconfig=""
+I0830 09:10:44.625155       1 flags.go:64] FLAG: --leader-elect="false"
+I0830 09:10:44.625156       1 flags.go:64] FLAG: --leader-elect-lease-duration="15s"
+I0830 09:10:44.625157       1 flags.go:64] FLAG: --leader-elect-renew-deadline="10s"
+I0830 09:10:44.625159       1 flags.go:64] FLAG: --leader-elect-resource-lock="leases"
+I0830 09:10:44.625160       1 flags.go:64] FLAG: --leader-elect-resource-name="kube-scheduler"
+I0830 09:10:44.625162       1 flags.go:64] FLAG: --leader-elect-resource-namespace="kube-system"
+I0830 09:10:44.625164       1 flags.go:64] FLAG: --leader-elect-retry-period="2s"
+I0830 09:10:44.625165       1 flags.go:64] FLAG: --log-flush-frequency="5s"
+I0830 09:10:44.625166       1 flags.go:64] FLAG: --log-text-info-buffer-size="0"
+I0830 09:10:44.625184       1 flags.go:64] FLAG: --log-text-split-stream="false"
+I0830 09:10:44.625186       1 flags.go:64] FLAG: --logging-format="text"
+I0830 09:10:44.625188       1 flags.go:64] FLAG: --master=""
+I0830 09:10:44.625189       1 flags.go:64] FLAG: --min-compatibility-version="[]"
+I0830 09:10:44.625277       1 flags.go:64] FLAG: --permit-address-sharing="false"
+I0830 09:10:44.625279       1 flags.go:64] FLAG: --permit-port-sharing="false"
+I0830 09:10:44.625280       1 flags.go:64] FLAG: --pod-max-in-unschedulable-pods-duration="5m0s"
+I0830 09:10:44.625281       1 flags.go:64] FLAG: --profiling="true"
+I0830 09:10:44.625283       1 flags.go:64] FLAG: --requestheader-allowed-names="[]"
+I0830 09:10:44.625284       1 flags.go:64] FLAG: --requestheader-client-ca-file=""
+I0830 09:10:44.625286       1 flags.go:64] FLAG: --requestheader-extra-headers-prefix="[x-remote-extra-]"
+I0830 09:10:44.625288       1 flags.go:64] FLAG: --requestheader-group-headers="[x-remote-group]"
+I0830 09:10:44.625290       1 flags.go:64] FLAG: --requestheader-uid-headers="[]"
+I0830 09:10:44.625293       1 flags.go:64] FLAG: --requestheader-username-headers="[x-remote-user]"
+I0830 09:10:44.625299       1 flags.go:64] FLAG: --secure-port="10259"
+I0830 09:10:44.625301       1 flags.go:64] FLAG: --show-hidden-metrics-for-version=""
+I0830 09:10:44.625302       1 flags.go:64] FLAG: --tls-cert-file=""
+I0830 09:10:44.625304       1 flags.go:64] FLAG: --tls-cipher-suites="[]"
+I0830 09:10:44.625305       1 flags.go:64] FLAG: --tls-curve-preferences="[]"
+I0830 09:10:44.625319       1 flags.go:64] FLAG: --tls-min-version=""
+I0830 09:10:44.625321       1 flags.go:64] FLAG: --tls-private-key-file=""
+I0830 09:10:44.625322       1 flags.go:64] FLAG: --tls-sni-cert-key="[]"
+I0830 09:10:44.625324       1 flags.go:64] FLAG: --v="3"
+I0830 09:10:44.625327       1 flags.go:64] FLAG: --version="false"
+I0830 09:10:44.625329       1 flags.go:64] FLAG: --vmodule=""
+I0830 09:10:44.625331       1 flags.go:64] FLAG: --write-config-to=""
+I0830 09:10:45.230665       1 serving.go:411] Generated self-signed cert in-memory
+W0830 09:10:45.231472       1 client_config.go:683] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+I0830 09:10:45.243010       1 requestheader_controller.go:255] Loaded a new request header values for RequestHeaderAuthRequestController
+E0830 09:10:45.244069       1 options.go:205] The manifest file is empty, ignoring.
+I0830 09:10:45.248367       1 framework.go:514] "the scheduler starts to work with those plugins" Plugins={"PreEnqueue":{"Enabled":[{"Name":"SchedulingGates","Weight":0},{"Name":"DynamicResources","Weight":0},{"Name":"DefaultPreemption","Weight":0}],"Disabled":null},"QueueSort":{"Enabled":[{"Name":"PrioritySort","Weight":0}],"Disabled":null},"PreFilter":{"Enabled":[{"Name":"NodeName","Weight":0},{"Name":"NodeUnschedulable","Weight":0},{"Name":"TaintToleration","Weight":0},{"Name":"NodeAffinity","Weight":0},{"Name":"NodePorts","Weight":0},{"Name":"NodeResourcesFit","Weight":0},{"Name":"VolumeRestrictions","Weight":0},{"Name":"NodeVolumeLimits","Weight":0},{"Name":"VolumeBinding","Weight":0},{"Name":"VolumeZone","Weight":0},{"Name":"PodTopologySpread","Weight":0},{"Name":"InterPodAffinity","Weight":0},{"Name":"DynamicResources","Weight":0},{"Name":"NodeDeclaredFeatures","Weight":0}],"Disabled":null},"Filter":{"Enabled":[{"Name":"NodeName","Weight":0},{"Name":"NodeUnschedulable","Weight":0},{"Name":"TaintToleration","Weight":0},{"Name":"NodeAffinity","Weight":0},{"Name":"NodePorts","Weight":0},{"Name":"NodeResourcesFit","Weight":0},{"Name":"VolumeRestrictions","Weight":0},{"Name":"NodeVolumeLimits","Weight":0},{"Name":"VolumeBinding","Weight":0},{"Name":"VolumeZone","Weight":0},{"Name":"PodTopologySpread","Weight":0},{"Name":"InterPodAffinity","Weight":0},{"Name":"DynamicResources","Weight":0},{"Name":"NodeDeclaredFeatures","Weight":0}],"Disabled":null},"PostFilter":{"Enabled":[{"Name":"DynamicResources","Weight":0},{"Name":"DefaultPreemption","Weight":0}],"Disabled":null},"PreScore":{"Enabled":[{"Name":"TaintToleration","Weight":0},{"Name":"NodeAffinity","Weight":0},{"Name":"NodeResourcesFit","Weight":0},{"Name":"VolumeBinding","Weight":0},{"Name":"PodTopologySpread","Weight":0},{"Name":"InterPodAffinity","Weight":0},{"Name":"NodeResourcesBalancedAllocation","Weight":0}],"Disabled":null},"Score":{"Enabled":[{"Name":"TaintToleration","Weight":3},{"Name":"NodeAffinity","Weight":2},{"Name":"NodeResourcesFit","Weight":1},{"Name":"VolumeBinding","Weight":1},{"Name":"PodTopologySpread","Weight":2},{"Name":"InterPodAffinity","Weight":2},{"Name":"DynamicResources","Weight":2},{"Name":"NodeResourcesBalancedAllocation","Weight":1},{"Name":"ImageLocality","Weight":1}],"Disabled":null},"Reserve":{"Enabled":[{"Name":"VolumeBinding","Weight":0},{"Name":"DynamicResources","Weight":0}],"Disabled":null},"Permit":{"Enabled":null,"Disabled":null},"PreBind":{"Enabled":[{"Name":"VolumeBinding","Weight":0},{"Name":"DynamicResources","Weight":0}],"Disabled":null},"Bind":{"Enabled":[{"Name":"DefaultBinder","Weight":0}],"Disabled":null},"PostBind":{"Enabled":null,"Disabled":null},"MultiPoint":{"Enabled":null,"Disabled":null},"PlacementGenerate":{"Enabled":null,"Disabled":null},"PlacementScore":{"Enabled":[{"Name":"NodeResourcesFit","Weight":1}],"Disabled":null},"PodGroupPostFilter":{"Enabled":[{"Name":"DynamicResources","Weight":0},{"Name":"DefaultPreemption","Weight":0}],"Disabled":null}}
+I0830 09:10:45.322123       1 configfile.go:94] "Using component config" config=<
+	apiVersion: kubescheduler.config.k8s.io/v1
+	clientConnection:
+	  acceptContentTypes: ""
+	  burst: 100
+	  contentType: application/vnd.kubernetes.protobuf
+	  kubeconfig: ""
+	  qps: 50
+	enableContentionProfiling: true
+	enableProfiling: true
+	kind: KubeSchedulerConfiguration
+	leaderElection:
+	  leaderElect: false
+	  leaseDuration: 15s
+	  renewDeadline: 10s
+	  resourceLock: leases
+	  resourceName: kube-scheduler
+	  resourceNamespace: kube-system
+	  retryPeriod: 2s
+	parallelism: 16
+	percentageOfNodesToScore: 0
+	podInitialBackoffSeconds: 1
+	podMaxBackoffSeconds: 10
+	profiles:
+	- pluginConfig:
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1
+	      kind: DefaultPreemptionArgs
+	      minCandidateNodesAbsolute: 100
+	      minCandidateNodesPercentage: 10
+	    name: DefaultPreemption
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1
+	      bindingTimeout: 10m0s
+	      filterTimeout: 10s
+	      kind: DynamicResourcesArgs
+	    name: DynamicResources
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1
+	      hardPodAffinityWeight: 1
+	      ignorePreferredTermsOfExistingPods: false
+	      kind: InterPodAffinityArgs
+	    name: InterPodAffinity
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1
+	      kind: NodeAffinityArgs
+	    name: NodeAffinity
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1
+	      kind: NodeResourcesBalancedAllocationArgs
+	      resources:
+	      - name: cpu
+	        weight: 1
+	      - name: memory
+	        weight: 1
+	    name: NodeResourcesBalancedAllocation
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1
+	      kind: NodeResourcesFitArgs
+	      scoringStrategy:
+	        resources:
+	        - name: cpu
+	          weight: 1
+	        - name: memory
+	          weight: 1
+	        type: LeastAllocated
+	    name: NodeResourcesFit
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1
+	      defaultingType: System
+	      kind: PodTopologySpreadArgs
+	    name: PodTopologySpread
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1
+	      bindTimeoutSeconds: 600
+	      kind: VolumeBindingArgs
+	      shape:
+	      - score: 10
+	        utilization: 0
+	      - score: 0
+	        utilization: 100
+	    name: VolumeBinding
+	  plugins:
+	    bind: {}
+	    filter: {}
+	    multiPoint:
+	      enabled:
+	      - name: SchedulingGates
+	        weight: 0
+	      - name: PrioritySort
+	        weight: 0
+	      - name: NodeName
+	        weight: 0
+	      - name: NodeUnschedulable
+	        weight: 0
+	      - name: TaintToleration
+	        weight: 3
+	      - name: NodeAffinity
+	        weight: 2
+	      - name: NodePorts
+	        weight: 0
+	      - name: NodeResourcesFit
+	        weight: 1
+	      - name: VolumeRestrictions
+	        weight: 0
+	      - name: NodeVolumeLimits
+	        weight: 0
+	      - name: VolumeBinding
+	        weight: 0
+	      - name: VolumeZone
+	        weight: 0
+	      - name: PodTopologySpread
+	        weight: 2
+	      - name: InterPodAffinity
+	        weight: 2
+	      - name: DynamicResources
+	        weight: 2
+	      - name: DefaultPreemption
+	        weight: 0
+	      - name: NodeResourcesBalancedAllocation
+	        weight: 1
+	      - name: ImageLocality
+	        weight: 1
+	      - name: DefaultBinder
+	        weight: 0
+	      - name: NodeDeclaredFeatures
+	        weight: 0
+	    permit: {}
+	    placementGenerate: {}
+	    placementScore: {}
+	    podGroupPostFilter: {}
+	    postBind: {}
+	    postFilter: {}
+	    preBind: {}
+	    preEnqueue: {}
+	    preFilter: {}
+	    preScore: {}
+	    queueSort: {}
+	    reserve: {}
+	    score: {}
+	  schedulerName: gpusched-scheduler
+ >
+I0830 09:10:45.324986       1 server.go:187] "Starting Kubernetes Scheduler" version="v0.0.0-master+$Format:%H$"
+I0830 09:10:45.325004       1 server.go:189] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I0830 09:10:45.328442       1 requestheader_controller.go:180] Starting RequestHeaderAuthRequestController
+I0830 09:10:45.328475       1 shared_informer.go:524] "Waiting for caches to sync"
+I0830 09:10:45.328508       1 configmap_cafile_content.go:205] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::client-ca-file"
+I0830 09:10:45.328520       1 shared_informer.go:524] "Waiting for caches to sync"
+I0830 09:10:45.328527       1 configmap_cafile_content.go:205] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file"
+I0830 09:10:45.328535       1 shared_informer.go:524] "Waiting for caches to sync"
+I0830 09:10:45.328607       1 reflector.go:425] "Starting reflector" type="*v1.ConfigMap" resyncPeriod="12h0m0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.328625       1 reflector.go:472] "Listing and watching" type="*v1.ConfigMap" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.328658       1 reflector.go:425] "Starting reflector" type="*v1.ConfigMap" resyncPeriod="12h0m0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.328676       1 reflector.go:472] "Listing and watching" type="*v1.ConfigMap" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.328747       1 reflector.go:425] "Starting reflector" type="*v1.ConfigMap" resyncPeriod="12h0m0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.328761       1 reflector.go:472] "Listing and watching" type="*v1.ConfigMap" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.328610       1 tlsconfig.go:203] "Loaded serving cert" certName="Generated self signed cert" certDetail="\"localhost@1788081045\" [serving] validServingFor=[127.0.0.1,localhost,localhost] issuer=\"localhost-ca@1788081044\" (2026-08-30 08:10:44 +0000 UTC to 2027-08-30 08:10:44 +0000 UTC (now=2026-08-30 09:10:45.328591253 +0000 UTC))"
+I0830 09:10:45.328824       1 secure_serving.go:214] Serving securely on [::]:10259
+I0830 09:10:45.328931       1 reflector.go:425] "Starting reflector" type="*v1.VolumeAttachment" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.328951       1 reflector.go:472] "Listing and watching" type="*v1.VolumeAttachment" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.328959       1 tlsconfig.go:243] "Starting DynamicServingCertificateController"
+I0830 09:10:45.329067       1 reflector.go:425] "Starting reflector" type="*v1.CSINode" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329079       1 reflector.go:472] "Listing and watching" type="*v1.CSINode" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329135       1 reflector.go:425] "Starting reflector" type="*v1.Service" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329144       1 reflector.go:472] "Listing and watching" type="*v1.Service" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329188       1 reflector.go:425] "Starting reflector" type="*v1.ReplicaSet" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329195       1 reflector.go:472] "Listing and watching" type="*v1.ReplicaSet" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329241       1 reflector.go:425] "Starting reflector" type="*v1.StatefulSet" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329254       1 reflector.go:472] "Listing and watching" type="*v1.StatefulSet" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329322       1 reflector.go:425] "Starting reflector" type="*v1.PersistentVolume" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329331       1 reflector.go:472] "Listing and watching" type="*v1.PersistentVolume" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329349       1 reflector.go:425] "Starting reflector" type="*v1.Pod" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329364       1 reflector.go:472] "Listing and watching" type="*v1.Pod" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329417       1 reflector.go:425] "Starting reflector" type="*v1.CSIStorageCapacity" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329424       1 reflector.go:472] "Listing and watching" type="*v1.CSIStorageCapacity" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329441       1 reflector.go:425] "Starting reflector" type="*v1.DeviceClass" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329447       1 reflector.go:472] "Listing and watching" type="*v1.DeviceClass" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329498       1 reflector.go:425] "Starting reflector" type="*v1.PersistentVolumeClaim" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329541       1 reflector.go:472] "Listing and watching" type="*v1.PersistentVolumeClaim" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329565       1 reflector.go:425] "Starting reflector" type="*v1.CSIDriver" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329572       1 reflector.go:472] "Listing and watching" type="*v1.CSIDriver" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.328934       1 reflector.go:425] "Starting reflector" type="*v1.StorageClass" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329645       1 reflector.go:472] "Listing and watching" type="*v1.StorageClass" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329668       1 reflector.go:425] "Starting reflector" type="*v1.Node" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329674       1 reflector.go:472] "Listing and watching" type="*v1.Node" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329532       1 reflector.go:425] "Starting reflector" type="*v1.PodDisruptionBudget" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329775       1 reflector.go:472] "Listing and watching" type="*v1.PodDisruptionBudget" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329782       1 reflector.go:425] "Starting reflector" type="*v1.ResourceSlice" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329789       1 reflector.go:472] "Listing and watching" type="*v1.ResourceSlice" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329870       1 reflector.go:425] "Starting reflector" type="*v1.DeviceTaintRule" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329880       1 reflector.go:472] "Listing and watching" type="*v1.DeviceTaintRule" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329764       1 reflector.go:425] "Starting reflector" type="*v1.ResourceClaim" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329901       1 reflector.go:472] "Listing and watching" type="*v1.ResourceClaim" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329961       1 reflector.go:425] "Starting reflector" type="*v1.Namespace" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329975       1 reflector.go:472] "Listing and watching" type="*v1.Namespace" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.329990       1 reflector.go:425] "Starting reflector" type="*v1.ReplicationController" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.330003       1 reflector.go:472] "Listing and watching" type="*v1.ReplicationController" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.331547       1 reflector.go:507] "Caches populated" type="*v1.ConfigMap" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.331605       1 reflector.go:507] "Caches populated" type="*v1.ConfigMap" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.331662       1 reflector.go:507] "Caches populated" type="*v1.ConfigMap" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.332739       1 reflector.go:507] "Caches populated" type="*v1.StatefulSet" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.332758       1 reflector.go:507] "Caches populated" type="*v1.VolumeAttachment" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+E0830 09:10:45.332816       1 reflector.go:227] "Failed to watch" err="failed to list *v1.DeviceTaintRule: the server could not find the requested resource" logger="UnhandledError" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343" type="*v1.DeviceTaintRule"
+I0830 09:10:45.333201       1 reflector.go:507] "Caches populated" type="*v1.CSINode" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.333434       1 reflector.go:507] "Caches populated" type="*v1.PodDisruptionBudget" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.333599       1 reflector.go:507] "Caches populated" type="*v1.Namespace" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.333657       1 reflector.go:507] "Caches populated" type="*v1.PersistentVolumeClaim" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.334438       1 reflector.go:507] "Caches populated" type="*v1.CSIStorageCapacity" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.334474       1 reflector.go:507] "Caches populated" type="*v1.PersistentVolume" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.334521       1 reflector.go:507] "Caches populated" type="*v1.DeviceClass" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.334567       1 reflector.go:507] "Caches populated" type="*v1.CSIDriver" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.334608       1 reflector.go:507] "Caches populated" type="*v1.StorageClass" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.334748       1 reflector.go:507] "Caches populated" type="*v1.ResourceSlice" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.334795       1 reflector.go:507] "Caches populated" type="*v1.ResourceClaim" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.334821       1 reflector.go:507] "Caches populated" type="*v1.ReplicationController" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.334874       1 reflector.go:507] "Caches populated" type="*v1.Service" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.334909       1 reflector.go:507] "Caches populated" type="*v1.Node" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.335041       1 reflector.go:507] "Caches populated" type="*v1.ReplicaSet" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.335230       1 eventhandlers.go:64] "Add event for node" node="gpu-cluster-worker"
+I0830 09:10:45.335274       1 node_tree.go:65] "Added node to NodeTree" node="gpu-cluster-worker" zone=""
+I0830 09:10:45.335310       1 eventhandlers.go:64] "Add event for node" node="gpu-cluster-worker2"
+I0830 09:10:45.335321       1 node_tree.go:65] "Added node to NodeTree" node="gpu-cluster-worker2" zone=""
+I0830 09:10:45.335360       1 eventhandlers.go:64] "Add event for node" node="gpu-cluster-control-plane"
+I0830 09:10:45.335363       1 node_tree.go:65] "Added node to NodeTree" node="gpu-cluster-control-plane" zone=""
+I0830 09:10:45.335815       1 reflector.go:507] "Caches populated" type="*v1.Pod" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+I0830 09:10:45.335895       1 eventhandlers.go:406] "Add event for scheduled pod" pod="kube-system/kube-proxy-qvwpc"
+I0830 09:10:45.335985       1 eventhandlers.go:406] "Add event for scheduled pod" pod="kube-system/nvidia-device-plugin-daemonset-snnqj"
+I0830 09:10:45.336030       1 eventhandlers.go:406] "Add event for scheduled pod" pod="kube-system/coredns-589f44dc88-gm9xk"
+I0830 09:10:45.336069       1 eventhandlers.go:406] "Add event for scheduled pod" pod="kube-system/kindnet-glnkw"
+I0830 09:10:45.336085       1 eventhandlers.go:406] "Add event for scheduled pod" pod="kube-system/kindnet-xmpvr"
+I0830 09:10:45.336095       1 eventhandlers.go:406] "Add event for scheduled pod" pod="local-path-storage/local-path-provisioner-855c7b7774-4drw4"
+I0830 09:10:45.336111       1 eventhandlers.go:242] "Add event for unscheduled pod" pod="default/gpujob-sample-worker-1"
+I0830 09:10:45.337238       1 eventhandlers.go:406] "Add event for scheduled pod" pod="gpusched-system/gpusched-scheduler-6dffc645c4-5nww7"
+I0830 09:10:45.337269       1 eventhandlers.go:406] "Add event for scheduled pod" pod="kube-system/kindnet-vgftl"
+I0830 09:10:45.337285       1 eventhandlers.go:406] "Add event for scheduled pod" pod="kube-system/kube-apiserver-gpu-cluster-control-plane"
+I0830 09:10:45.337296       1 eventhandlers.go:406] "Add event for scheduled pod" pod="kube-system/kube-controller-manager-gpu-cluster-control-plane"
+I0830 09:10:45.337310       1 eventhandlers.go:406] "Add event for scheduled pod" pod="kube-system/kube-proxy-9jscz"
+I0830 09:10:45.337320       1 eventhandlers.go:406] "Add event for scheduled pod" pod="kube-system/kube-proxy-w2rvn"
+I0830 09:10:45.337335       1 eventhandlers.go:406] "Add event for scheduled pod" pod="gpusched-system/gpusched-controller-manager-558b87dc8b-j8pdh"
+I0830 09:10:45.337343       1 eventhandlers.go:406] "Add event for scheduled pod" pod="kube-system/coredns-589f44dc88-7ktsd"
+I0830 09:10:45.337364       1 eventhandlers.go:406] "Add event for scheduled pod" pod="kube-system/etcd-gpu-cluster-control-plane"
+I0830 09:10:45.337379       1 eventhandlers.go:406] "Add event for scheduled pod" pod="kube-system/kube-scheduler-gpu-cluster-control-plane"
+I0830 09:10:45.337386       1 eventhandlers.go:406] "Add event for scheduled pod" pod="kube-system/nvidia-device-plugin-daemonset-tfzwf"
+I0830 09:10:45.337400       1 eventhandlers.go:242] "Add event for unscheduled pod" pod="default/test-scheduler"
+I0830 09:10:45.429164       1 shared_informer.go:531] "Caches are synced"
+I0830 09:10:45.429194       1 shared_informer.go:531] "Caches are synced"
+I0830 09:10:45.429195       1 shared_informer.go:531] "Caches are synced"
+I0830 09:10:45.429388       1 tlsconfig.go:181] "Loaded client CA" index=0 certName="client-ca::kube-system::extension-apiserver-authentication::client-ca-file,client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file" certDetail="\"front-proxy-ca\" [] validServingFor=[front-proxy-ca] issuer=\"<self>\" (2026-08-25 13:54:32 +0000 UTC to 2036-08-22 13:59:32 +0000 UTC (now=2026-08-30 09:10:45.429374669 +0000 UTC))"
+I0830 09:10:45.429817       1 tlsconfig.go:203] "Loaded serving cert" certName="Generated self signed cert" certDetail="\"localhost@1788081045\" [serving] validServingFor=[127.0.0.1,localhost,localhost] issuer=\"localhost-ca@1788081044\" (2026-08-30 08:10:44 +0000 UTC to 2027-08-30 08:10:44 +0000 UTC (now=2026-08-30 09:10:45.429809628 +0000 UTC))"
+I0830 09:10:45.429895       1 tlsconfig.go:181] "Loaded client CA" index=0 certName="client-ca::kube-system::extension-apiserver-authentication::client-ca-file,client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file" certDetail="\"kubernetes\" [] validServingFor=[kubernetes] issuer=\"<self>\" (2026-08-25 13:54:32 +0000 UTC to 2036-08-22 13:59:32 +0000 UTC (now=2026-08-30 09:10:45.429889128 +0000 UTC))"
+I0830 09:10:45.429920       1 tlsconfig.go:181] "Loaded client CA" index=1 certName="client-ca::kube-system::extension-apiserver-authentication::client-ca-file,client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file" certDetail="\"front-proxy-ca\" [] validServingFor=[front-proxy-ca] issuer=\"<self>\" (2026-08-25 13:54:32 +0000 UTC to 2036-08-22 13:59:32 +0000 UTC (now=2026-08-30 09:10:45.429915419 +0000 UTC))"
+I0830 09:10:45.430286       1 tlsconfig.go:203] "Loaded serving cert" certName="Generated self signed cert" certDetail="\"localhost@1788081045\" [serving] validServingFor=[127.0.0.1,localhost,localhost] issuer=\"localhost-ca@1788081044\" (2026-08-30 08:10:44 +0000 UTC to 2027-08-30 08:10:44 +0000 UTC (now=2026-08-30 09:10:45.430279711 +0000 UTC))"
+I0830 09:10:46.558354       1 reflector.go:472] "Listing and watching" type="*v1.DeviceTaintRule" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343"
+E0830 09:10:46.565768       1 reflector.go:227] "Failed to watch" err="failed to list *v1.DeviceTaintRule: the server could not find the requested resource" logger="UnhandledError" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:343" type="*v1.DeviceTaintRule"

@@ -19,11 +19,13 @@ spec:
       containers:
       - name: scheduler
         image: localhost:5001/gpusched-scheduler:latest
+        #image: registry.k8s.io/kube-scheduler:v1.28.0
         imagePullPolicy: Always
         command:
         - /usr/local/bin/kube-scheduler
         - --config=/etc/kubernetes/scheduler-config.yaml
         - --v=3
+        - --leader-elect=false
         volumeMounts:
         - name: config
           mountPath: /etc/kubernetes
@@ -50,17 +52,30 @@ data:
     kind: KubeSchedulerConfiguration
     profiles:
     - schedulerName: gpusched-scheduler
-      plugins:
-        filter:
-          enabled:
-          - name: GPUFit
-        score:
-          enabled:
-          - name: GPUFit
-            weight: 10
+      # plugins:
+      #   preFilter:
+      #     enabled:
+      #     - name: GPUFit
+      #   # postFilter:
+      #   #   enabled:
+      #   #   - name: GPUFit
+      #     disabled:
+      #     - name: "*"
+      # # plugins:
+      #   filter:
+      #     enabled:
+      #     - name: GPUFit
+      #   score:
+      #     enabled:
+      #     - name: GPUFit
+      #       weight: 10
 ---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: gpusched-scheduler
   namespace: gpusched-system
+
+
+
+  
