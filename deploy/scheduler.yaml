@@ -52,23 +52,22 @@ data:
     kind: KubeSchedulerConfiguration
     profiles:
     - schedulerName: gpusched-scheduler
-      # plugins:
-      #   preFilter:
-      #     enabled:
-      #     - name: GPUFit
-      #   # postFilter:
-      #   #   enabled:
-      #   #   - name: GPUFit
-      #     disabled:
-      #     - name: "*"
-      # # plugins:
-      #   filter:
-      #     enabled:
-      #     - name: GPUFit
-      #   score:
-      #     enabled:
-      #     - name: GPUFit
-      #       weight: 10
+      plugins:
+        filter:
+          enabled:
+          - name: GPUFit
+        score:
+          enabled:
+          - name: GPUFit
+            weight: 10
+        # preFilter:
+        #   enabled:
+        #   - name: GPUFit
+        # postFilter:
+        #   enabled:
+        #   - name: GPUFit
+          disabled:
+          - name: "*"
 ---
 apiVersion: v1
 kind: ServiceAccount
