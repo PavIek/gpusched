@@ -19,7 +19,7 @@ spec:
       containers:
       - name: scheduler
         image: localhost:5001/gpusched-scheduler:latest
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         command:
         - /usr/local/bin/kube-scheduler
         - --config=/etc/kubernetes/scheduler-config.yaml

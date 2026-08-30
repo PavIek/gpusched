@@ -119,6 +119,10 @@ run: manifests generate fmt vet ## Run a controller from your host.
 docker-build: ## Build docker image with the manager.
 	$(CONTAINER_TOOL) build -t ${IMG} .
 
+.PHONY: docker-build-scheduler
+docker-build-scheduler: ## Build docker image with the manager.
+	$(CONTAINER_TOOL) build -t ${IMG} -f Dockerfile.scheduler .
+
 .PHONY: docker-push
 docker-push: ## Push docker image with the manager.
 	$(CONTAINER_TOOL) push ${IMG}

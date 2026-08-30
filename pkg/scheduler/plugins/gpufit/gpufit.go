@@ -7,7 +7,6 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	fwk "k8s.io/kube-scheduler/framework"
-	frameworkruntime "k8s.io/kubernetes/pkg/scheduler/framework/runtime"
 )
 
 const (
@@ -68,12 +67,6 @@ func (pl *GPUFit) ScoreExtensions() fwk.ScoreExtensions {
 	return nil
 }
 
-func New(obj runtime.Object, handle fwk.Handle) (fwk.Plugin, error) {
+func New(ctx context.Context, obj runtime.Object, handle fwk.Handle) (fwk.Plugin, error) {
 	return &GPUFit{handle: handle}, nil
-}
-
-func NewPluginFactory() frameworkruntime.PluginFactory {
-	return func(ctx context.Context, configuration runtime.Object, f fwk.Handle) (fwk.Plugin, error) {
-		return New(configuration, f)
-	}
 }
